@@ -20,3 +20,9 @@ Use the available file-reading and search tools. Work from the current source an
 - Add an evidence table with columns for relationship, source location, and what the source establishes. Give repo-relative paths and line numbers when available. For likely impact, distinguish confirmed callers from places that may be affected, and identify where the trace stopped.
 - When asked to inspect or explain, keep the work read-only unless the user requests a saved map. When asked to inspect and then edit, share the pre-change map and the intended edit before changing files. After editing, verify and update any relationships the edit affected.
 - If asked to save the map, write it as Markdown at the requested path, or use `docs/codebase-map.md` for a new repo-wide map. Include the scope and inspected revision if available. Mention any relevant uncommitted changes. When reusing a saved map, recheck the edges you rely on against current files.
+
+## Write lasting documentation
+
+When a mapping task produces documents for future maintainers, read [the documentation writing guide](references/writing-docs.md). Verify implementation and deployment claims against the relevant evidence and write for readers who have never seen the conversation.
+
+When the task includes finishing a feature and preparing its PR or MR, read [the maintenance manual guide](references/maintenance-manual.md) and write or update the manual before submission. An analysis-only request remains read-only unless the user asks to save the result.
